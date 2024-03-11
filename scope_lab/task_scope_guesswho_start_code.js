@@ -1,19 +1,19 @@
 // // GUESS 1 ///////////////////
-let guess = {
-  hair_colour: "red",
-  eye_colour: "blue",
-  hat: false,
-  glasses: true,
-  firstName: "Joseph",
-};
+// let guess = {
+//   hair_colour: "red",
+//   eye_colour: "blue",
+//   hat: false,
+//   glasses: true,
+//   firstName: "Joseph",
+// };
 
-const guessWho = function () {
-  return `Guess who is ${guess.firstName}`;
-};
+// const guessWho = function () {
+//   return `Guess who is ${guess.firstName}`;
+// };
 
-const finalAnswer = guessWho();
-console.log(finalAnswer);
-// // Prediction: 
+// const finalAnswer = guessWho();
+// console.log(finalAnswer);
+// // Prediction: 'Guess who is Joseph'
 
 // // GUESS 2 ///////////////////
 
@@ -30,6 +30,9 @@ console.log(finalAnswer);
 
 // const guess2 = `Guess Who is ${firstName}`;
 // console.log("guess2: ", guess2);
+
+//Prediction: 'Guess Who is Liz.' 
+//            'Guess Who is Donna'
 
 // // GUESS 3 ///////////////////
 
@@ -62,6 +65,8 @@ console.log(finalAnswer);
 // const finalAnswer = guessWho();
 // console.log(finalAnswer);
 
+//Prediction: 'Guess Who is Chris'
+
 // // GUESS 4 ///////////////////
 
 // let firstName = "Gail";
@@ -77,25 +82,29 @@ console.log(finalAnswer);
 // const finalAnswer = guessWho();
 // console.log(finalAnswer);
 
-// // GUESS 5 ///////////////////
+//Prediction: Guess Who is Gail
 
-// const guess = {
-//   hair_colour: "blonde",
-//   eye_colour: "brown",
-//   hat: false,
-//   glasses: false,
-//   firstName: "Jennifer",
-// };
+// GUESS 5 ///////////////////
 
-// const changeGuess = function () {
-//   guess = {
-//     hair_colour: "blonde",
-//     eye_colour: "blue",
-//     hat: false,
-//     glasses: false,
-//     firstName: "Kyle",
-//   };
-// };
+const guess = {
+  hair_colour: "blonde",
+  eye_colour: "brown",
+  hat: false,
+  glasses: false,
+  firstName: "Jennifer",
+};
 
-// changeGuess();
-// console.log(`Guess Who is ${guess.firstName}`);
+const changeGuess = function () {
+  guess = {
+    hair_colour: "blonde",
+    eye_colour: "blue",
+    hat: false,
+    glasses: false,
+    firstName: "Kyle",
+  };
+};
+
+changeGuess();
+console.log(`Guess Who is ${guess.firstName}`);
+
+//Prediction: Error due to assignment to constant variable.
