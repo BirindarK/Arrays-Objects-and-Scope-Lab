@@ -32,26 +32,33 @@ unitedKingdom = [
  * Q1. Add some tourist attractions to England
  */
 
-england = null;
-
-// console.log(england);
+let england = unitedKingdom.find(england => england.name === "England");
+england.touristAttractions = ["Big Ben", "London Eye"]
+console.log(england);
 
 /**
  * Q2. Change the capital of Wales to "Cardiff"
  */
 
-wales = null;
-
-// console.log(wales);
+let wales = unitedKingdom.find(wales => wales.capital === "Swansea");
+wales.capital = "Cardiff"
+console.log(wales);
 
 /**
  * Q3. Find a method in the documentation which will give you all of the available keys for Northern Ireland
  */
 
-northernIrelandKeys = null;
-
-// console.log(northernIrelandKeys);
+let northernIrelandKeys = Object.keys(unitedKingdom.find(northernIrelandKeys => northernIrelandKeys.capital === "Belfast"));
+console.log(northernIrelandKeys);
 
 /**
  * Q4. Use an if statement to compare the population of Scotland to the population of Wales, and say which is bigger.
  */
+
+let scotland = unitedKingdom.find(scotland => scotland.capital === "Edinburgh");
+
+if(scotland.population > wales.population){
+  console.log("Scotland's population is bigger than Wales' population");
+} else {
+  console.log("Wales' population is bigger than Scotland's population");
+}
